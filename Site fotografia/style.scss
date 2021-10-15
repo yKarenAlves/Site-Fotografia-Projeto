@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+// variaveis
+$cor-padrao-escuro: #8F8A7C;
+$cor-titulo: #BFDBD2;
+$fonte-branca: #FFF;
+
+
+body {
+    background-color: $cor-padrao-escuro;
+    color: $fonte-branca;
+}
+
+header {
+    background-color: #DBD9D4;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.356);
+}
+
+/*alinhando o cabeçalho */
+
+.lista-menu {
+    display: block;
+    text-align: center;
+    
+}
+
+.lista-menu li {
+    display: inline-block;
+    margin: 0 5%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: $cor-padrao-escuro;
+    font-size: 40px;
+    font-family: 'Italianno', cursive; 
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: #8C818F;
+}
+
+.lista-menu li img {
+    width: 150px;
+}
+
+
+/*conteudo principal da página*/
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    padding: 20px;
+    margin: 15px 0 30px 0;
+    color: $cor-titulo;
+    font-family: 'Italianno', cursive;
+}
+
+.sessao-inicial {
+    display: inline-block;
+    border: 1px solid white;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.082);
+    border-radius: 3px;
+    width: 80%;
+    margin: 50px 0 0 0;
+    padding: 0 0 20px 0;
+}
+
+.artigo-inicial {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding: 7% 7% 0 0;
+    margin: 0 0 0 7%;
+}
+
+.letra-grande::first-letter {
+    font-size: 3em;
+}
+
+.sessao-inicial p {
+    width: 110%;
+    text-align: start;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+.sessao-inicial img {
+    display: inline-block;
+    width: 400px;
+    margin: 0 5% 0 0;
+}
+
+/*sobre*/
+
+.sessao-sobre {
+    margin: 5% 0 0 0;
+    padding: 3% 7%;
+    background-color: white;
+    height: 50%;
+}
+
+.sessao-article {
+    border-right: 1px solid $cor-padrao-escuro;
+    border-bottom: 1px solid $cor-padrao-escuro;
+    padding: 0 0 3% 0;
+    width: 80%;
+    margin: 0 10%;
+}
+
+h2 {
+    font-size: 3.5em;
+    margin: 15px 0 30px 0;
+    color: $cor-titulo;
+    font-family: 'Italianno', cursive;
+}
+
+.paragrafo-sobre {
+    display: inline-block;
+    color: $cor-padrao-escuro;
+    width: 50%;
+    font-size: 18px;
+    text-align: start;
+    letter-spacing: 1px;
+    margin: 5% 2%;
+    vertical-align: top;
+}
+
+.sessao-sobre img {
+    display: inline-block;
+    width: 280px;
+}
+
+
+/*Fotos*/
+
+.minhas-fotos {
+    padding: 1px;
+    width: 90%;
+    margin: 2% auto;
+}
+
+.minhas-fotos ul {
+    display: inline-block;
+    margin: 3%;
+}
+
+.minhas-fotos li {
+    display: inline-block;
+    width: 20%;
+    padding: 0 0 5% 0;
+    margin: 0 1%;
+}
+
+.minhas-fotos img {
+    display: block;
+    width: 100%;
+    border: 2px solid white;
+}
+
+/*Contato*/
+
+.section-contato {
+    background-color: white;
+    padding: 1% 7%;
+}
+
+.section-contato p {
+    color: $cor-padrao-escuro;
+    font-size: 18px;  
+}
+
+form {
+    display: inline-block;
+    margin:0 5%;
+    width: 50%;
+    color: $cor-padrao-escuro;
+    padding-top: 3%;  
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px 0 0 15%;
+    font-weight: bold;
+}
+
+form input, textarea {
+    display: block;
+    width: 70%;
+    padding: 0.5%;
+    margin-left: 15%; 
+}
+
+.botao-enviar {
+    width: 150px;
+    margin: 3% auto;
+    background-color: $cor-padrao-escuro;
+    border-radius: 5px;
+    color: $fonte-branca;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+}
+
+.input-checkbox {
+    display: inline-block;
+    width: auto;
+    margin: auto;
+}
+
+.botao-enviar:hover {
+    background-color: $cor-titulo;
+}
+
+.section-contato img {
+    display: inline-block;
+    width: 300px;
+    border: 2px solid $cor-padrao-escuro;
+    text-align: end;
+}
+
+/*footer*/
+
+footer {
+    margin: 3% 15%;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.rodape {
+    width: 70%;
+    margin: 0 auto; 
+}
+
+footer p {
+    display: inline-block;
+    width: 210px;
+    margin-top: 3%;
+}
+
+footer ul {
+    display: inline-block;
+    width: 100px;
+    text-align: end;
+    margin: 3%;
+}
+
+footer li {
+    display: inline-block;
+    width: 30px;
+}
+
+footer img {
+    width: 25px;
+}
