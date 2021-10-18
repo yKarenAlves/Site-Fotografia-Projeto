@@ -9,14 +9,11 @@ header {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.356); }
 
 /*alinhando o cabeçalho */
-.lista-menu {
-  display: block;
-  text-align: center; }
-
-.lista-menu li {
-  display: inline-block;
-  margin: 0 5%;
-  vertical-align: middle; }
+.cabecalho .lista-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%; }
 
 a {
   text-decoration: none;
@@ -29,7 +26,7 @@ a:hover {
   color: #8C818F; }
 
 .lista-menu li img {
-  width: 150px; }
+  width: 120px; }
 
 /*conteudo principal da página*/
 main {
@@ -52,11 +49,10 @@ h1 {
   padding: 0 0 20px 0; }
 
 .artigo-inicial {
-  display: inline-block;
-  width: 40%;
-  vertical-align: top;
-  padding: 7% 7% 0 0;
-  margin: 0 0 0 7%; }
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; }
 
 .letra-grande::first-letter {
   font-size: 3em; }
@@ -79,32 +75,31 @@ h1 {
   background-color: white;
   height: 50%; }
 
-.sessao-article {
-  border-right: 1px solid #8F8A7C;
-  border-bottom: 1px solid #8F8A7C;
-  padding: 0 0 3% 0;
-  width: 80%;
-  margin: 0 10%; }
-
 h2 {
   font-size: 3.5em;
   margin: 15px 0 30px 0;
   color: #BFDBD2;
   font-family: 'Italianno', cursive; }
 
+.sessao-article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 1px solid #8F8A7C;
+  border-bottom: 1px solid #8F8A7C;
+  padding: 0 0 3% 0;
+  width: 80%;
+  margin: 0 10%; }
+
 .paragrafo-sobre {
-  display: inline-block;
   color: #8F8A7C;
-  width: 50%;
+  width: 55%;
   font-size: 18px;
   text-align: start;
-  letter-spacing: 1px;
-  margin: 5% 2%;
-  vertical-align: top; }
+  letter-spacing: 1px; }
 
 .sessao-sobre img {
-  display: inline-block;
-  width: 280px; }
+  width: 300px; }
 
 /*Fotos*/
 .minhas-fotos {
@@ -136,22 +131,27 @@ h2 {
   color: #8F8A7C;
   font-size: 18px; }
 
+.contato {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.formulario {
+  display: flex;
+  flex-direction: column; }
+
 form {
-  display: inline-block;
-  margin: 0 5%;
   width: 50%;
   color: #8F8A7C;
   padding-top: 3%; }
 
 form label {
-  display: block;
   font-size: 18px;
   text-align: justify;
   margin: 10px 0 0 15%;
   font-weight: bold; }
 
 form input, textarea {
-  display: block;
   width: 70%;
   padding: 0.5%;
   margin-left: 15%; }
@@ -167,7 +167,6 @@ form input, textarea {
   border: 0px; }
 
 .input-checkbox {
-  display: inline-block;
   width: auto;
   margin: auto; }
 
@@ -175,34 +174,30 @@ form input, textarea {
   background-color: #BFDBD2; }
 
 .section-contato img {
-  display: inline-block;
   width: 300px;
-  border: 2px solid #8F8A7C;
-  text-align: end; }
+  border: 2px solid #8F8A7C; }
 
 /*footer*/
 footer {
   margin: 3% 15%;
-  text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.137); }
 
 .rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 70%;
-  margin: 0 auto; }
+  margin: 10px auto; }
 
 footer p {
-  display: inline-block;
-  width: 210px;
-  margin-top: 3%; }
+  width: 210px; }
 
 footer ul {
-  display: inline-block;
+  display: flex;
   width: 100px;
-  text-align: end;
-  margin: 3%; }
+  text-align: end; }
 
 footer li {
-  display: inline-block;
   width: 30px; }
 
 footer img {

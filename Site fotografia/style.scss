@@ -20,16 +20,11 @@ header {
 
 /*alinhando o cabeçalho */
 
-.lista-menu {
-    display: block;
-    text-align: center;
-    
-}
-
-.lista-menu li {
-    display: inline-block;
-    margin: 0 5%;
-    vertical-align: middle;
+.cabecalho .lista-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
 }
 
 a {
@@ -46,7 +41,7 @@ a:hover {
 }
 
 .lista-menu li img {
-    width: 150px;
+    width: 120px;
 }
 
 
@@ -74,11 +69,10 @@ h1 {
 }
 
 .artigo-inicial {
-    display: inline-block;
-    width: 40%;
-    vertical-align: top;
-    padding: 7% 7% 0 0;
-    margin: 0 0 0 7%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .letra-grande::first-letter {
@@ -91,7 +85,6 @@ h1 {
     font-size: 18px;
     letter-spacing: 1px;
 }
-
 
 .sessao-inicial img {
     display: inline-block;
@@ -108,14 +101,6 @@ h1 {
     height: 50%;
 }
 
-.sessao-article {
-    border-right: 1px solid $cor-padrao-escuro;
-    border-bottom: 1px solid $cor-padrao-escuro;
-    padding: 0 0 3% 0;
-    width: 80%;
-    margin: 0 10%;
-}
-
 h2 {
     font-size: 3.5em;
     margin: 15px 0 30px 0;
@@ -123,22 +108,28 @@ h2 {
     font-family: 'Italianno', cursive;
 }
 
+.sessao-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 1px solid $cor-padrao-escuro;
+    border-bottom: 1px solid $cor-padrao-escuro;
+    padding: 0 0 3% 0;
+    width: 80%;
+    margin: 0 10%;
+}
+
 .paragrafo-sobre {
-    display: inline-block;
     color: $cor-padrao-escuro;
-    width: 50%;
+    width: 55%;
     font-size: 18px;
     text-align: start;
     letter-spacing: 1px;
-    margin: 5% 2%;
-    vertical-align: top;
 }
 
 .sessao-sobre img {
-    display: inline-block;
-    width: 280px;
+    width: 300px;
 }
-
 
 /*Fotos*/
 
@@ -178,16 +169,24 @@ h2 {
     font-size: 18px;  
 }
 
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
 form {
-    display: inline-block;
-    margin:0 5%;
     width: 50%;
     color: $cor-padrao-escuro;
     padding-top: 3%;  
 }
 
 form label {
-    display: block;
     font-size: 18px;
     text-align: justify;
     margin: 10px 0 0 15%;
@@ -195,7 +194,6 @@ form label {
 }
 
 form input, textarea {
-    display: block;
     width: 70%;
     padding: 0.5%;
     margin-left: 15%; 
@@ -213,7 +211,6 @@ form input, textarea {
 }
 
 .input-checkbox {
-    display: inline-block;
     width: auto;
     margin: auto;
 }
@@ -223,40 +220,36 @@ form input, textarea {
 }
 
 .section-contato img {
-    display: inline-block;
     width: 300px;
     border: 2px solid $cor-padrao-escuro;
-    text-align: end;
 }
 
 /*footer*/
 
 footer {
     margin: 3% 15%;
-    text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.137);
 }
 
 .rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 70%;
-    margin: 0 auto; 
+    margin: 10px auto; 
 }
 
 footer p {
-    display: inline-block;
     width: 210px;
-    margin-top: 3%;
 }
 
 footer ul {
-    display: inline-block;
+    display: flex;
     width: 100px;
     text-align: end;
-    margin: 3%;
 }
 
 footer li {
-    display: inline-block;
     width: 30px;
 }
 
